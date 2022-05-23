@@ -1,7 +1,7 @@
 {
-  "name": "@hodgef/js-library-boilerplate",
-  "version": "2.7.26",
-  "description": "Javascript Starter Kit for building libraries",
+  "name": "@mossab_errahal/library",
+  "version": "1.0.0",
+  "description": "in this package you can find a function that return all the holidays in france country and in the same time there is a function that informe you that the given day is a holiday or not",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
@@ -15,15 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hodgef/js-library-boilerplate"
+    "url": "https://github.com/mossaberrahal02/Holidays_library"
   },
-  "author": "Francisco Hodge <hello@franciscohodge.com> (https://github.com/hodgef)",
+  "author": "Mossab ERRAHAL <mossaberrahal@gmail.com> (https://github.com/mossaberrahal02)",
   "bugs": {
-    "url": "https://github.com/hodgef/js-library-boilerplate/issues"
+    "url": "https://github.com/mossaberrahal02/Holidays_library/issues"
   },
-  "homepage": "https://github.com/hodgef/js-library-boilerplate",
+  "homepage": "https://github.com/mossaberrahal02/Holidays_library",
   "keywords": [
-    "library"
+    "library",
+    "Holidays",
+    "les jours fériés en france"
   ],
   "license": "MIT",
   "devDependencies": {
