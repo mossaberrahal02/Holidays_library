@@ -1,3 +1,4 @@
-import App from './App';
+import Lib from '../lib/index.js';
 
-new App();
+const myLib = new Lib();
+console.log("toto",myLib);  
