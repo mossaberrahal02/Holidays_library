@@ -1,6 +1,6 @@
 {
   "name": "@mossab_errahal/library",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "in this package you can find a function that return all the holidays in france country and in the same time there is a function that informe you that the given day is a holiday or not",
   "main": "src/lib/App.js",
   "scripts": {
