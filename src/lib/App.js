@@ -29,26 +29,26 @@ class App {
         var LundiPentecote = new Date(an, MoisPaques - 1, JourPaques + 50);
 
 
-        const jourDeAn = 'jour de l\'An est ' + JourAn;//
-        const feteDePaque = 'lundi de Paques ' + LundiPaques;//
-        const feteDeTravaille = 'fete de travaille ' + FeteTravail;//
-        const feteDeVictoire1945 = 'fete de victoire 1945 ' + Victoire1945;//
-        const feteDeAscension = 'fete de Ascension ' + Ascension;//
-        const fetePentecote = 'lundi de pentecote ' + LundiPentecote;//
-        const feteNationale = 'fete nationale est en ' + FeteNationale;//
-        const feteDeAssomption = 'fete de assomption ' + Assomption;//
-        const feteDeToussaint = 'fete de toussaint ' + Toussaint;//
-        const feteDeArmistice = 'fete de armistice ' + Armistice;//
-        const jourDeNoel = 'jour de noel ' + Noel;//
-        return new Array(jourDeAn, feteDePaque, feteDeTravaille, feteDeVictoire1945, feteDeAscension, fetePentecote, feteNationale, feteDeAssomption, feteDeToussaint, feteDeArmistice, jourDeNoel);
+        const jourDeAn = 'jour de l\'An est ' + JourAn.getFullYear()+'-'+(JourAn.getMonth()+1)+'-'+JourAn.getDate();
+        const feteDePaque = 'lundi de Paques ' + LundiPaques.getFullYear()+'-'+(LundiPaques.getMonth()+1)+'-'+LundiPaques.getDate();
+        const feteDeTravaille = 'fete de travaille ' + FeteTravail.getFullYear()+'-'+(FeteTravail.getMonth()+1)+'-'+FeteTravail.getDate();
+        const feteDeVictoire1945 = 'fete de victoire 1945 ' + Victoire1945.getFullYear()+'-'+(Victoire1945.getMonth()+1)+'-'+Victoire1945.getDate();
+        const feteDeAscension = 'fete de Ascension ' + Ascension.getFullYear()+'-'+(Ascension.getMonth()+1)+'-'+Ascension.getDate();
+        const fetePentecote = 'lundi de pentecote ' + LundiPentecote.getFullYear()+'-'+(LundiPentecote.getMonth()+1)+'-'+LundiPentecote.getDate();
+        const feteNationale = 'fete nationale est en ' + FeteNationale.getFullYear()+'-'+(FeteNationale.getMonth()+1)+'-'+FeteNationale.getDate();
+        const feteDeAssomption = 'fete de assomption ' + Assomption.getFullYear()+'-'+(Assomption.getMonth()+1)+'-'+Assomption.getDate();
+        const feteDeToussaint = 'fete de toussaint ' + Toussaint.getFullYear()+'-'+(Toussaint.getMonth()+1)+'-'+Toussaint.getDate();
+        const feteDeArmistice = 'fete de armistice ' + Armistice.getFullYear()+'-'+(Armistice.getMonth()+1)+'-'+Armistice.getDate();
+        const jourDeNoel = 'jour de noel ' + Noel.getFullYear()+'-'+(Noel.getMonth()+1)+'-'+Noel.getDate();
+        return `${jourDeAn} <br>${feteDePaque}<br> ${feteDeTravaille}<br> ${feteDeVictoire1945} <br>${feteDeAscension}<br> ${fetePentecote}<br> ${feteNationale}<br> ${feteDeAssomption}<br> ${feteDeToussaint}<br> ${feteDeArmistice}<br> ${jourDeNoel}`;
     }
 
-    //anne doit etre sous la forme "yyyy/mm/dd";
+    //le param anne doit etre un string sous la forme "yyyy/mm/dd";
     isHolidayDay = (anne) => {
 
         var v = anne.split('/');
         var an = v[0];
-        var date = Date.parse(anne);    // date hiya l parametre dyal switch li gha n9arnha m3aha l parametre dyal l function
+        var date = Date.parse(anne);
         var JourAn = new Date(an, "00", "01");
         var FeteTravail = new Date(an, "04", "01");
         var Victoire1945 = new Date(an, "04", "08");
@@ -77,41 +77,26 @@ class App {
         switch (date) {
             case Date.parse(JourAn):
                 return 'Jour de l\'An ';
-                break;
             case Date.parse(LundiPaques):
                 return 'lundi de PAQUES';
-                break;
             case Date.parse(FeteTravail):
                 return 'Fête du travail';
-                break;
-
             case Date.parse(Victoire1945):
                 return 'Victoire 1945';
-                break;
             case Date.parse(Ascension):
                 return 'ASCENSION';
-                break;
             case Date.parse(Pentecote):
                 return 'Pentecôte';
-                break;
-
             case Date.parse(FeteNationale):
                 return 'Fete Nationale';
-                break;
             case Date.parse(Assomption):
                 return 'ASSOMPTION';
-                break;
             case Date.parse(Toussaint):
                 return 'TOUSSAINT';
-                break;
-
             case Date.parse(Armistice):
                 return 'ARMISTICE 1918';
-                break;
             case Date.parse(Noel):
                 return 'Jour de Noël';
-                break;
-
             default:
                 return 'ce n\'est pas un jour férié';
         }
