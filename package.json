@@ -2,7 +2,7 @@
   "name": "@mossab_errahal/library",
   "version": "1.0.1",
   "description": "in this package you can find a function that return all the holidays in france country and in the same time there is a function that informe you that the given day is a holiday or not",
-  "main": "lib/App.js",
+  "main": "src/lib/App.js",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
