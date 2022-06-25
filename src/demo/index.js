@@ -10,6 +10,6 @@ const test = document.querySelector('#root')
 test.innerHTML = 
 `
 <h2>test des fonctions</h2>
-<p>${obj.getAllHolidays(2024)}</p>
-<p>${obj.isHolidayDay("2024/5/1")}</p> 
+<p>${obj.getAllHolidays(2023)}</p>
+<p>${obj.isHolidayDay("2022/04/10")}</p> 
 `

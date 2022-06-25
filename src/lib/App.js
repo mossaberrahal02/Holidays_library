@@ -40,7 +40,7 @@ class App {
         const feteDeToussaint = 'fete de toussaint ' + Toussaint.getFullYear()+'-'+(Toussaint.getMonth()+1)+'-'+Toussaint.getDate();
         const feteDeArmistice = 'fete de armistice ' + Armistice.getFullYear()+'-'+(Armistice.getMonth()+1)+'-'+Armistice.getDate();
         const jourDeNoel = 'jour de noel ' + Noel.getFullYear()+'-'+(Noel.getMonth()+1)+'-'+Noel.getDate();
-        return `${jourDeAn} <br>${feteDePaque}<br> ${feteDeTravaille}<br> ${feteDeVictoire1945} <br>${feteDeAscension}<br> ${fetePentecote}<br> ${feteNationale}<br> ${feteDeAssomption}<br> ${feteDeToussaint}<br> ${feteDeArmistice}<br> ${jourDeNoel}`;
+        return `${jourDeAn}${feteDePaque}${feteDeTravaille}${feteDeVictoire1945}${feteDeAscension}${fetePentecote}${feteNationale}${feteDeAssomption}${feteDeToussaint}${feteDeArmistice}${jourDeNoel}`;
     }
 
     //le param anne doit etre un string sous la forme "yyyy/mm/dd";

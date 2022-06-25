@@ -1,4 +1,4 @@
-// an est l'anne qui on veut s'avoir si c'est un jour ferie ou nn
+// le parametre an   C'est l'année où nous voulons savoir quels jours fériés contiennent
 export function getAllHolidays(an){
 
 	var JourAn = new Date(an, "00", "01");
@@ -40,7 +40,7 @@ export function getAllHolidays(an){
     return `${jourDeAn}, ${feteDePaque},${feteDeTravaille},${feteDeVictoire1945},${feteDeAscension},${fetePentecote},${feteNationale},${feteDeAssomption},${feteDeToussaint},${feteDeArmistice},${jourDeNoel}`;
 }
 
-//anne doit etre sous la forme "yy/mm/dd";
+//anne doit etre un string sous la forme "yy/mm/dd"
 export function isHolidayDay(anne){
 
     var v = anne.split('/');
@@ -64,7 +64,7 @@ export function isHolidayDay(anne){
 	var L = I - J;
 	var MoisPaques = 3 + Math.floor((L + 40)/44);
 	var JourPaques = L + 28 - 31*Math.floor(MoisPaques/4);
-	var Paques = new Date(an, MoisPaques-1, JourPaques);
+	var Paques = new Date(an, MoisPaques-1, JourPaques); 
 	var VendrediSaint = new Date(an, MoisPaques-1, JourPaques-2);
 	var LundiPaques = new Date(an, MoisPaques-1, JourPaques+1);
 	var Ascension = new Date(an, MoisPaques-1, JourPaques+39);
