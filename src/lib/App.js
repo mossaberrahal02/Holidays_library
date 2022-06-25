@@ -1,6 +1,7 @@
 class App {
     constructor() {
     }
+    // le parametre an   C'est l'année où nous voulons savoir quels jours fériés contiennent
     getAllHolidays = (an) => {
 
         var JourAn = new Date(an, "00", "01");
